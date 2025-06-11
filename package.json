@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Blog personal of wfogame",
+  "keywords": [
+    "blog",
+    "personal",
+    "cool",
+    "pyschology",
+    "views"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://wfogame/Blog"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "author": "wfogame",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  }
+}
