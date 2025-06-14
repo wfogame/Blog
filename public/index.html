@@ -3,37 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel = 'stylesheet' href = 'style.css'>
+    <title>My Dev Journey - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class = 'header'>
-        <h2>About Me</h2>
+    <!-- Main Container -->
+    <div class="container">
+        
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="main-title">My Dev Journey</h1>
+                <h2 class="subtitle">About Me</h2>
+            </div>
+        </header>
+        
+        <!-- Main Content Area -->
+        <main class="main-content">
+            
+            <!-- About Section -->
+            <section class="about-section">
+                <div class="about-content">
+                    <p class="intro-text">
+                        I am a random 12 year old wannabe who wants to do stuff like:
+                    </p>
+                    
+                    <div class="goals-container">
+                        <h3 class="goals-title">My Goals & Interests</h3>
+                        <ol class="goals-list">
+                            <li class="goal-item">
+                                <span class="goal-title">Making stuff obviously</span>
+                            </li>
+                            <li class="goal-item">
+                                <span class="goal-title">Doing hacking related stuff</span>
+                                <span class="goal-note">100% ethical guys..... WITH Permission</span>
+                            </li>
+                            <li class="goal-item">
+                                <span class="goal-title">Making websites</span>
+                                <span class="goal-note">cuz why not</span>
+                            </li>
+                            <li class="goal-item">
+                                <span class="goal-title">Understanding programming languages</span>
+                                <div class="goal-details">
+                                    <p>Want to learn C, C#, C++ as these are the BASIC LANGUAGES and therefore are important for understanding computers.</p>
+                                    <p class="highlight">Surprising how efficient some programs are - like printing hello world costs 8 bytes in C++ ONLY 8 bytesssss!</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Navigation/Resources Section -->
+            <section class="resources-section">
+                <h3 class="section-title">Learning Resources</h3>
+                <div class="buttons-container">
+                    <a href="https://roadmap.sh/cyber-security" class="resource-link">
+                        <button class="resource-btn primary">
+                            <span class="btn-icon">🛡️</span>
+                            <span class="btn-text">Cyber Security Roadmap</span>
+                        </button>
+                    </a>
+                    <a href="https://roadmap.sh" class="resource-link">
+                        <button class="resource-btn secondary">
+                            <span class="btn-icon">🗺️</span>
+                            <span class="btn-text">All Roadmaps</span>
+                        </button>
+                    </a>
+                </div>
+            </section>
+            
+            <!-- Technical Notes Section -->
+            <section class="notes-section">
+                <h3 class="section-title">Technical Notes</h3>
+                <div class="notes-container">
+                    <div class="note-card">
+                        <h4 class="note-title">WSL SSH Mounting</h4>
+                        <p class="note-description">
+                            Not formatted 'cause too lazy how to mount, currently using WSL - BEST EVER!
+                        </p>
+                        <div class="code-block">
+                            <code class="command">
+                                sshfs user@remote-server:/path/to/folder /mnt/ssh-mount
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-text">Keep learning, keep building! 🚀</p>
+            </div>
+        </footer>
+        
     </div>
-    <p>
-        I am A random 12 year old wanana be who wanan do stuff like:
-            <ol>
-                <li>Making stuff obviously</li>
-                <li>Doing hacking related stuff 100% ethical guys..... WITH Permision</li>
-                <li>Making websites cuz why not</li>
-                <li>Understand stuff, Wanan learn C C# C++ AS THESE ARE THE BASIC LANGAUGES AND Therefore are important for understanding comptuers. suprising how efficent some programs are, 
-                <br>like printing hello world cost 8 bytes in c++ ONLY 8 bytesssss</li>
-                </ol>
-
-
-    </p>
-
-    <a href = 'https://roadmap.sh/cyber-security'><button>RoadMAP</button></a>
-    <a href = 'https://roadmap.sh'><button>ROAD MAPS</button></a>
-
-  <div class = 'personal_tricks'>
-	Not formated cuaz too lazy how to mount, currently using for WSL  BEST EVER 
-
-  	sshfs user@remote-server:/path/to/folder /mnt/ssh-mount
-
-
-  </div>
-
-
 </body>
 </html>
