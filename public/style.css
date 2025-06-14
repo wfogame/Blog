@@ -1,0 +1,193 @@
+:root {
+  /* Background Colors */
+  --bg-primary: #181818;
+  --bg-secondary: #1f1f1f;
+  --bg-tertiary: #252525;
+  --bg-elevated: #2b2b2b;
+  --bg-hover: #282828;
+  --bg-active: #2a2a2a;
+  --bg-selection: #264f78;
+  --bg-current-line: #282828;
+  --bg-input: #3c3c3c;
+  --bg-dropdown: #252526;
+
+  /* Border Colors */
+  --border-color: #2b2b2b;
+  --border-focus: #0078d4;
+  --border-contrast: #6fc3df;
+  --outline-color: rgba(0, 120, 212, 0.6);
+
+  /* Text Colors */
+  --text-primary: #cccccc;
+  --text-secondary: #9d9d9d;
+  --text-muted: #6b6b6b;
+  --text-disabled: #656565;
+  --text-ghost: #6b6b6b;
+  --text-link: #3794ff;
+
+  /* Syntax Highlighting */
+  --syntax-keyword: #569cd6;
+  --syntax-string: #ce9178;
+  --syntax-number: #b5cea8;
+  --syntax-function: #dcdcaa;
+  --syntax-variable: #9cdcfe;
+  --syntax-constant: #4fc1ff;
+  --syntax-type: #4ec9b0;
+  --syntax-comment: #6a9955;
+  --syntax-operator: #cccccc;
+
+  /* Command Line Colors */
+  --cmd-command: var(--syntax-keyword);
+  --cmd-username: var(--syntax-constant);
+  --cmd-server: var(--syntax-string);
+  --cmd-path: var(--syntax-string);
+  --cmd-separator: var(--text-primary);
+  --cmd-special: var(--text-primary);
+
+  /* Button Colors */
+  --btn-primary: #0e639c;
+  --btn-primary-hover: #1177bb;
+  --btn-primary-active: #0d5a8c;
+  --btn-secondary: #3c3c3c;
+  --btn-secondary-hover: #4a4a4a;
+  --btn-secondary-active: #323232;
+
+  /* Status Colors */
+  --status-error: #f48771;
+  --status-warning: #ddb967;
+  --status-info: #75beff;
+  --status-success: #89d185;
+  --status-modified: #e2c08d;
+  --status-added: #81b88b;
+  --status-deleted: #c74e39;
+
+  /* Shadows */
+  --shadow-small: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-large: 0 8px 16px rgba(0, 0, 0, 0.2);
+  --shadow-focus: 0 0 0 2px var(--border-focus);
+  --shadow-glow: 0 0 20px rgba(0, 120, 212, 0.3);
+
+  /* Glass Effects */
+  --glass-bg: rgba(24, 24, 24, 0.8);
+  --glass-border: rgba(43, 43, 43, 0.5);
+  --glass-backdrop: blur(10px);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  --glass-highlight: rgba(255, 255, 255, 0.1);
+
+  /* Typography */
+  --font-family-code: 'Cascadia Code', Consolas, 'Courier New', monospace;
+  --font-family-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-size-xs: 0.75rem;   /* 12px */
+  --font-size-sm: 0.875rem;  /* 14px */
+  --font-size-md: 1rem;      /* 16px */
+  --font-size-lg: 1.125rem;  /* 18px */
+  --font-size-xl: 1.25rem;   /* 20px */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.4;
+  --line-height-relaxed: 1.6;
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+
+  /* Spacing */
+  --space-xs: 0.25rem;   /* 4px */
+  --space-sm: 0.5rem;    /* 8px */
+  --space-md: 1rem;      /* 16px */
+  --space-lg: 1.5rem;    /* 24px */
+  --space-xl: 2rem;      /* 32px */
+  --space-2xl: 3rem;     /* 48px */
+  --space-3xl: 4rem;     /* 64px */
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;   /* 4px */
+  --radius-md: 0.375rem;  /* 6px */
+  --radius-lg: 0.5rem;    /* 8px */
+  --radius-xl: 0.75rem;   /* 12px */
+  --radius-2xl: 1rem;     /* 16px */
+  --radius-full: 9999px;  /* Pill shape */
+
+  /* Animations */
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 350ms;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Utility Classes */
+
+/* Command Line Utilities */
+.cmd-command { color: var(--cmd-command); }
+.cmd-username { color: var(--cmd-username); }
+.cmd-server { color: var(--cmd-server); }
+.cmd-path { color: var(--cmd-path); }
+.cmd-separator { color: var(--cmd-separator); }
+.cmd-special { color: var(--cmd-special); }
+
+/* Syntax Highlighting Utilities */
+.syntax-keyword { color: var(--syntax-keyword); }
+.syntax-string { color: var(--syntax-string); }
+.syntax-number { color: var(--syntax-number); }
+.syntax-function { color: var(--syntax-function); }
+.syntax-variable { color: var(--syntax-variable); }
+.syntax-constant { color: var(--syntax-constant); }
+.syntax-type { color: var(--syntax-type); }
+.syntax-comment { color: var(--syntax-comment); }
+.syntax-operator { color: var(--syntax-operator); }
+
+/* Text Color Utilities */
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-muted { color: var(--text-muted); }
+.text-disabled { color: var(--text-disabled); }
+.text-ghost { color: var(--text-ghost); }
+.text-link { color: var(--text-link); }
+
+/* Background Utilities */
+.bg-primary { background-color: var(--bg-primary); }
+.bg-secondary { background-color: var(--bg-secondary); }
+.bg-tertiary { background-color: var(--bg-tertiary); }
+.bg-elevated { background-color: var(--bg-elevated); }
+.bg-hover { background-color: var(--bg-hover); }
+.bg-active { background-color: var(--bg-active); }
+.bg-input { background-color: var(--bg-input); }
+
+/* Status Color Utilities */
+.status-error { color: var(--status-error); }
+.status-warning { color: var(--status-warning); }
+.status-info { color: var(--status-info); }
+.status-success { color: var(--status-success); }
+.status-modified { color: var(--status-modified); }
+.status-added { color: var(--status-added); }
+.status-deleted { color: var(--status-deleted); }
+
+/* Component Classes */
+.code-block {
+  font-family: var(--font-family-code);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-normal);
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+}
+
+.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: var(--glass-backdrop);
+  box-shadow: var(--glass-shadow);
+}
+
+.glass::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--glass-highlight);
+}
